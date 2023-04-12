@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const userRoutes = require('./routes/route')
 const path = require('path')
-const db = ''// !ССЫЛКА НА ВАШУ БД!
+const db = 'mongodb+srv://stas:stas228@cluster0.aq5aonz.mongodb.net/usersDB?retryWrites=true&w=majority'// !ССЫЛКА НА ВАШУ БД!
 mongoose
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(res => { console.log('connected to DB') })
